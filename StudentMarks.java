@@ -1,14 +1,17 @@
+import java.util.Scanner;
 public class StudentMarks {
     public static void main(String args[]) {
         //score 0-100
-        int score = 40;
         String grade = null;
+        System.out.print("Enter your score: ");
+        Scanner sc =  new Scanner(System.in);
+        int score =  sc.nextInt();
 
         switch (score/10) {
             //score 80-100
+            case 10:
+            case 9:
             case 8:
-                grade = "A";
-                break;
             case 7:
                 grade = "A";
                 break;
